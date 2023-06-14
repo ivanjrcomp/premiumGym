@@ -75,7 +75,6 @@ export function Profile() {
 
       const userUpdated = user
       userUpdated.name = data.name
-      console.log(data.old_password)
 
       await api.put('/users', data)
 
